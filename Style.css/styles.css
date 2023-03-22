@@ -1,0 +1,11 @@
+div.imagen {
+   display: flex;
+   justify-content: center;
+}
+
+.ordenar{
+    text-align: center;
+    width: 350px;
+    height: 250px;
+
+}
