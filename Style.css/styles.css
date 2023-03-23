@@ -1,3 +1,13 @@
+/*Tittle*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+/*Eslogan*/
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300&display=swap');
+/*Menú*/
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300&family=Roboto:wght@300&display=swap');
+
+
+
+  
 div.imagen {
    display: flex;
    justify-content: center;
@@ -8,4 +18,35 @@ div.imagen {
     width: 350px;
     height: 250px;
 
+}
+
+/* Wallpaper */
+
+body{
+    background-color: rgb(85, 202, 67);
+}
+/*Título*/
+h1{
+    color: rgb(240, 240, 240);
+
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+}
+/*Eslogan*/
+h2{
+    color: rgb(240, 240, 240);
+    font-family: 'Laila', sans-serif;
+    font-weight: 300;
+    font-size: larger;
+}
+
+/*Menú*/
+h4{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
 }
