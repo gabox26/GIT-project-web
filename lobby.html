@@ -1,70 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css/styles.css">
-    <title>Midori no seiki</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Midori no Seiki
+    </title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link
+     rel="stylesheet" 
+     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid"> 
+            <a href="" class="navbar-brand text-info fw-semibold fs-4"> MIDORI NO SEIKI</a>
+            <button class="navbar-toggler" type="button" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#menuLateral"
+                >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div>
-        <h1 align = "center">MIDORI NO SEIKI</h1>
-    </div>
+            <section class="offcanvas offcanvas-start bg-dark" id="menuLateral">
+                <div class="offcanvas-header" data-bs-theme="dark">
+                    <h5 class="offcanvas-title text-info">CATEGORIAS</h5>
+                    <button class="btn-close" type="button" aria-label="close" data-bs-dismiss="offcanvas">
+                    </button>
 
-<body>
-    <div>
-        <div>
-            <p align = "center">
-                Siembra el arte en tu jardín
+                </div>
+                   
+                <div class="offcanvas-body d-flex flex-column justify-content-between px-0">
+                    <ul class="navbar-nav fs-5 justify-content-evenly">
+                        <li class="nav-item p-3 py-md-1"><a href="herramientas.html" class="nav-link">herramientas</a></li>
+                        <li class="nav-item p-3 py-md-1"><a href="accesoriosJardin.html" class="nav-link">accesorios</a></li>
+                        <li class="nav-item p-3 py-md-1"><a href="" class="nav-link">productos populares</a></li>
+                        <li class="nav-item p-3 py-md-1"><a href="semillas.html" class="nav-link">semillas</a></li>
+                        <li class="nav-item p-3 py-md-1"><a href="redesSociales.html" class="nav-link">redes sociales</a></li>
+                        <li class="nav-item p-3 py-md-1"><a href="account.html" class="nav-link">account</a></li>
+                        <li class="nav-item p-3 py-md-1"><a href="config.html" class="nav-link">configuracion</a></li>
+                    </ul>
+                </div>
+            </section>
 
-            </p>
         </div>
 
-        <div>
-            <h4>CATEGORIAS</h4>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+  <body>
+    <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagen/imagenJardineria.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagen/imagenJardineria.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagen/herramientas de jardineria.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-
-        <div class="herramientas" target="_blank">
-            <a href="herramientas.html">herramientas de jardineria</a>
-        </div>
-        
-        <div class="accesorios" target="_blank">
-            <a href="accesoriosJardin.html">accesorios para jardin</a>
-        </div>
-
-        <div class="semillas" target="_blank">
-            <a href="semillas.html">semillas de plantas</a>
-        </div>
-
-        <div>
-            <h4 align = "center">PRODUCTOS POPULARES</h4>
-        </div>
-        <div class="imagen">
-            <div>
-                <img  class="ordenar" src="imagen/images.jpg" alt="kitHerramientas">
-                <p>kit de herramientas marca yakun</p>
-                <p>precio: $20.000 CLP</p>
-                <p>descripcion resumen del producto: </p>
-                <!--dejar aca un link que dirija al producto correspondiente-->>
-            </div>  
-            <div>
-                <img class="ordenar" src="imagen/cierra.jpg" alt="cierra">
-                <p>cierra marca woods</p>
-                <p>precio: $15.000 CLP</p>
-                <p>descripcion resumen del producto: </p>
-                <!--dejar aca un link que dirija al producto correspondiente-->>
-            </div>
-            <div>
-       
-                <img  class="ordenar" src="imagen/hacha.jpg" alt="hacha">
-                <p>hacha marca woods</p>
-                <p>precio: $8.000 CLP</p>
-                <p>descripcion resumen del producto: </p>
-                <!--dejar aca un link que dirija al producto correspondiente-->>
-            </div>
-        </div>
-    </div>
-    
-</body>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </body>
 </html>
