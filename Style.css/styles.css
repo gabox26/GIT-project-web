@@ -7,6 +7,7 @@
 
 
 
+
   
 div.imagen {
    display: flex;
@@ -21,10 +22,12 @@ div.imagen {
     margin-right: 15px;
 }
 
+
 /* Wallpaper */
 
 body{
     background-color: rgb(255, 255, 255);
+
 }
 /*Título*/
 h1{
@@ -32,6 +35,7 @@ h1{
 
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
+   
 }
 /*Eslogan*/
 h2{
@@ -39,42 +43,32 @@ h2{
     font-family: 'Laila', sans-serif;
     font-weight: 300;
     font-size: larger;
+    
 }
 
 /*Menú*/
 h4{
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
+
+}
+h5{
+    font-family: 'Open Sans';
 }
 
 p{
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
+
 }
 
-#carousel{
-    padding: 0;
-    height: 200px;
-}
+.slide{
+    width: 100%;
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
-*{
-    margin: 0;
-    padding:0;
-    font-family: 'Open Sans';
 }
-header{
-    background: url(img/header.jpg);
-    background-size: cover;
-    background-position:center;
-    height: 300px;
-}
-header h1{
-    text-align: center;
-    font-size: 35px;
-    /* background-color: #000; */
-    color: #fff;
-    padding: 30px 0;
+.slide img{
+
+    height: 80vh;
 }
 .contenedor{
     max-width: 1200px;
@@ -82,7 +76,8 @@ header h1{
     margin: auto;
     display: flex;
     justify-content: space-between;
-   
+    /* oculto lo que queda fuera del .contenedor */
+    contain: paint;
 }
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items{
@@ -133,7 +128,7 @@ header h1{
     border-radius: 5px;
     cursor: pointer;
 }
-/* seccion carrito */
+
 .carrito{
     border: 1px solid #666;
     width: 35%;
@@ -144,7 +139,7 @@ header h1{
     position: sticky !important;
     top: 0;
     transition: .3s;
-
+    /* Estilos para ocultar */
 }
 .carrito .header-carrito{
     background-color: #000;
@@ -156,7 +151,6 @@ header h1{
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    position: relative;
     border-bottom: 1px solid #666;
     padding: 20px;
 }
@@ -198,7 +192,26 @@ header h1{
     font-size: 18px;
     margin-bottom: 5px;
 }
-
+.carrito .carrito-item .btn-eliminar{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #000;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+}
+.carrito .carrito-item .btn-eliminar i{
+    pointer-events: none;
+}
 
 .carrito-total{
     background-color: #f3f3f3;
@@ -243,3 +256,4 @@ header h1{
         width: 100%;
     }
   }
+  
