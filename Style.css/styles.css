@@ -320,3 +320,72 @@ p{
         border-radius: 2%;
     }
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+}
+.contenedorc{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    background: #fff;
+    padding: 4px;
+}
+h2{
+    text-align: center;
+    color: #000000;
+    font-size: 30px;
+    margin-top: 6px;
+  
+}
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+.buttonc{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  #000000;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: cadetblue;
+}
+
+.link{
+    text-decoration: none;
+      color: #1a2537;
+    font-weight: 600;
+}
+.link:hover{
+     color: cadetblue;
+}
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
