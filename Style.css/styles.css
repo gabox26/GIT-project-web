@@ -389,3 +389,13 @@ input[type="password"]{
         border-radius: 2%;
     }
 }
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #806ab3;
+    padding-top: 20px;
+    
+
+}
